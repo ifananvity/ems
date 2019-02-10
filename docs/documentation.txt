@@ -1,0 +1,45 @@
+EMS adalah aplikasi managemen kegiatan yang bisa digunakan sebagai pengingat, catatan
+untuk kehidupan sehari-hari Anda. Aplikasi ini memiliki 5 fitur utama: Tambah kegiatan, 
+Tampilkan kegiatan, Hapus kegiatan, Cari kegiatan, Urut kegiatan.
+
+------------------------------------------------------------------------------------------------
+
+void gotoxy (int x, int y);
+Fungsi ini merubah posisi cursor dengan koordinat x dan y
+
+int showsCurrentTime(void);
+Fungsi ini mencetak tanggal dan waktu
+
+void returnFunc(void);
+Fungsi ini memanggil mainMenu() dengan inputan hanya enter 
+
+void swap(int *a, int *b);
+Fungsi ini menukar value dari 2 var integer
+
+void swap2(char *str1, char *str2);
+Fungsi ini menukar value dari 2 var strings
+
+void printTitle(void);
+Fungsi ini mencetak splash screen/ "welcome message"
+
+void mainMenu(void);
+Fungsi ini berguna sebagai menu/jembatan dari kelima fitur aplikasi, hence the name
+
+void addEvent(void);
+Fungsi ini mem-prompt pengguna untuk mengisi informasi yang dibutuhkan untuk menambahkan kegiatan baru
+
+void listEvent(void);
+Fungsi ini mencetak semua kegiatan yang terdaftar
+
+void removeEvent(void);
+Fungsi ini mem-prompt pengguna untuk mengisikan nomor urut kegiatan untuk dihapus
+
+void searchEvent(void);
+Fungsi ini mem-prompt pengguna untuk memilih mode pencarian, kemudian akan diproses pada fungsi
+search(By); yang menerima argument pilihan
+
+void searchBy(int selection);
+Fungsi ini memproses pencarian berdasarkan pilihan pengguna pada fungsi searchEvent();
+
+void sortEvent(void);
+Fungsi ini mem-prompt pengguna untuk memilih mode pengurutan
